@@ -1,0 +1,42 @@
+.Login-Form {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(26, 26, 26);
+  color: chartreuse;
+}
+
+.Input-Login {
+  margin: 10px;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  border: none;
+  height: 50px;
+  width: 250px;
+  border-radius: 12px;
+  padding: 0px 15px;
+}
+
+.Button-Login {
+  border: none;
+  background-color: rgba(121, 121, 121, 0.678);
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  width: 250px;
+  border-radius: 12px;
+}
+
+.Button-Login:disabled {
+  transition: all 0.2s ease-in;
+  color: rgb(109, 109, 109);
+  background-color: rgba(255, 255, 255, 0.178);
+}
+
+.Button-Login:enabled {
+  transition: all 0.4s ease-in;
+  background-color: rgb(181, 255, 106, 0.678);
+}

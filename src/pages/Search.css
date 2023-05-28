@@ -1,0 +1,46 @@
+.Search-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80vw;
+  max-width: 1200px;
+}
+
+.Search-page h1 {
+  text-align: center;
+}
+
+.Search-page-input {
+  width: 200px;
+  padding: 10px;
+  color: chartreuse;
+  background-color: #1b1b1b;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 10px 10px 0px;
+  font-weight: bold;
+}
+
+.Search-page-button {
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.Search-page-button:disabled {
+  transition: all 0.4s ease-out;
+}
+
+.Search-page-button:enabled {
+  transition: all 0.4s ease-out;
+  background-color: chartreuse;
+}
+
+.Cards {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80vw;
+  max-width: 1200px;
+}

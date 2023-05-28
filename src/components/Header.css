@@ -1,0 +1,45 @@
+.main-header {
+  width: 80vw;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header h1 {
+  color: chartreuse;
+  text-align: center;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infos-header {
+  display: flex;
+}
+
+.infos-header img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.links {
+  display: flex;
+}
+
+.links-header {
+  margin-left: 50px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.links-header:hover {
+  transition: all 0.5s ease-out;
+  text-shadow: 0px 0px 25px #80ff0086;
+  color: chartreuse;
+}
+
+/* #7FFF00 */

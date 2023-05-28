@@ -1,0 +1,29 @@
+.Album-card {
+  display: flex;
+  align-items: center;
+  width: 370px;
+  max-width: 400px;
+  margin: 15px;
+  background-color: #2b2b2ba1;
+  border-radius: 15px;
+}
+
+.Album-card:hover {
+  transition: all 0.3s ease-in;
+  background-color: rgba(128, 255, 0, 0.185);
+}
+
+.Album-infos {
+  margin-left: 10px;
+}
+
+.Album-name {
+  text-decoration: none;
+  color: white;
+}
+
+.Artist {
+  color: white;
+  font-style: italic;
+  font-size: 14px;
+}
