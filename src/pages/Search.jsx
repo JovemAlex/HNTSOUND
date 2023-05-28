@@ -3,6 +3,7 @@ import AlbumCard from '../components/AlbumCard';
 import Header from '../components/Header';
 import Loading from '../components/Loading';
 import searchAlbumsAPI from '../services/searchAlbumsAPI';
+import './Search.css';
 
 export default class Search extends Component {
   constructor() {
@@ -14,6 +15,7 @@ export default class Search extends Component {
       button: true,
       response: [],
       loading: false,
+      message: '65 milhões de músicas para você!',
     };
   }
 
@@ -43,13 +45,16 @@ export default class Search extends Component {
       loading: true,
     });
     const { prevSearch } = this.state;
-    console.log(prevSearch);
     const response = await searchAlbumsAPI(prevSearch);
+    if (response.length <= 0) {
+      this.setState({
+        message: 'Nenhum álbum foi encontrado.',
+      });
+    }
     this.setState({
       response,
       loading: false,
     });
-    console.log(response);
   }
 
   render() {
@@ -59,9 +64,10 @@ export default class Search extends Component {
       button,
       response,
       loading,
+      message,
     } = this.state;
     return (
-      <div data-testid="page-search">
+      <div data-testid="page-search" className="Search-page">
         { loading && <Loading /> }
         { !loading && (
           <div>
@@ -73,20 +79,24 @@ export default class Search extends Component {
                 data-testid="search-artist-input"
                 placeholder="Nome do Artista"
                 onChange={ this.handleChange }
+                className="Search-page-input"
               />
               <button
                 type="submit"
                 data-testid="search-artist-button"
                 disabled={ button }
                 onClick={ this.handleClick }
+                className="Search-page-button"
               >
                 Pesquisar
               </button>
             </form>
             { prevSearch.length > 0 && response.length > 0
-              ? <h3>{`Resultado de álbuns de: ${prevSearch}`}</h3>
-              : <h3>Nenhum álbum foi encontrado</h3> }
-            { response.map((e) => <AlbumCard key={ e.collectionName } { ...e } />) }
+              ? <span>{`Resultado de álbuns de: ${prevSearch.toUpperCase()}`}</span>
+              : <span><em>{message}</em></span> }
+            <div className="Cards">
+              { response.map((e) => <AlbumCard key={ e.collectionName } { ...e } />) }
+            </div>
           </div>
         ) }
       </div>

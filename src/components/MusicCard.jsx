@@ -6,7 +6,6 @@ import Loading from './Loading';
 export default class MusicCard extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       favorite: '',
       loading: false,
@@ -15,7 +14,6 @@ export default class MusicCard extends Component {
   }
 
   handleCheck = async ({ target: { checked } }) => {
-    // console.log(checked);
     this.setState({
       loading: true,
       prevCheck: checked,

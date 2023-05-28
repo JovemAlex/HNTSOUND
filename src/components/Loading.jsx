@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import './Loading.css';
 
 export default class Loading extends Component {
   render() {
     return (
-      <p>Carregando...</p>
+      <div className="spinner" />
     );
   }
 }
