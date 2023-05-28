@@ -1,10 +1,43 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# HNTSOUND!
+
+### Projeto desenvolvido JavaScript e ReactJs
+### Para criar este projeto, foi cosumida a API do ITunes para disponibilzar as prévias de todas as músicas presentes no projeto.
+
+## Funcionalidades:
+Com este projeto, você consegue pesquisar diveras músicas e artistas, podendo reproduzir uma prévia de suas músicas.
+
+## Requisitos do projeto:
+- NodeJs v9+
+- VSCode
+
+## Instalação do projeto:
+
+Clonar o projeto:
+```bash
+  git clone git@github.com:JovemAlex/Trybetunes.git
+```
+
+Entrar na pasta:
+```bash
+  cd Trybetunes
+```
+
+Abrir a pasta atual no editor de texto (VScode):
+```bash
+  code .
+```
+
+Instalar todas as dependências do projeto:
+```bash
+  npm i
+```
+
+Rodar o projeto em seu navegador:
+```bash
+  npm start
+```
+
+<img src="images/Página de Login.jpeg" />
+<img src="images/Página da Pesquisa.png" />
+
+_Projeto recebe constates atualizações de estilizações e funcionalidades._
