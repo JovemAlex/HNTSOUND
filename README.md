@@ -19,7 +19,7 @@ Clonar o projeto:
 
 Entrar na pasta:
 ```bash
-  cd Trybetunes
+  cd HNTSOUND!
 ```
 
 Abrir a pasta atual no editor de texto (VScode):
