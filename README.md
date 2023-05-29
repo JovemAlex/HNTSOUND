@@ -7,7 +7,7 @@
 Com este projeto, você consegue pesquisar diveras músicas e artistas, podendo reproduzir uma prévia de suas músicas.
 
 ## Requisitos do projeto:
-- NodeJs v9+
+- NodeJs v16
 - VSCode
 
 ## Instalação do projeto:
